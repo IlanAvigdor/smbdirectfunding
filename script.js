@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Perform Calculation and Update DOM
     function calculateTerms(amount) {
         // Enforce boundaries
-        let safeAmount = Math.max(10000, Math.min(500000, amount));
+        let safeAmount = Math.max(5000, Math.min(500000, amount));
         
         let repayment = safeAmount * FACTOR_RATE;
         let dailyPayment = repayment / TOTAL_TRADING_DAYS;
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         // Only trigger heavy updates if valid
-        if (numVal >= 10000 && numVal <= 500000) {
+        if (numVal >= 5000 && numVal <= 500000) {
             amountSlider.value = numVal;
             calculateTerms(numVal);
         }
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     amountInput.addEventListener('blur', (e) => {
         let numVal = parseAmount(e.target.value);
-        if (numVal < 10000) numVal = 10000;
+        if (numVal < 5000) numVal = 5000;
         if (numVal > 500000) numVal = 500000;
         e.target.value = new Intl.NumberFormat('en-US').format(numVal);
         amountSlider.value = numVal;
