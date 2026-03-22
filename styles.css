@@ -513,4 +513,27 @@ footer {
         justify-content: center;
         gap: 16px;
     }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .result-item.highlight {
+        grid-column: span 1;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        align-items: center; /* keep everything centered */
+    }
+    
+    .hero {
+        padding: 24px 16px;
+    }
+    
+    .benefits-section {
+        padding: 60px 16px;
+    }
 }
