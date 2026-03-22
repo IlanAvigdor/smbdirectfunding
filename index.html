@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMB Direct Funding | Fast, Flexible Business Capital</title>
+    <meta name="description" content="Get the funding your business needs to grow. Calculate your terms instantly.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-text">SMB</span> Direct Funding
+            </div>
+            <nav>
+                <a href="#how">How It Works</a>
+                <a href="#calculator">Calculator</a>
+                <a href="#apply" class="button">Apply Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <div class="badge">Funding made simple</div>
+                <h1>Empower Your Business to <br><span>Grow Faster</span></h1>
+                <p>Transparent, flexible capital tailored to your unique business needs. See your terms instantly with our friendly calculator, and get funded in as little as 24 hours.</p>
+                <div class="hero-actions">
+                    <a href="#calculator" class="button button-large">Check Your Terms</a>
+                </div>
+                
+                <div class="trust-stats">
+                    <div class="stat">
+                        <strong>$500M+</strong>
+                        <span>Funded</span>
+                    </div>
+                    <div class="stat">
+                        <strong>24 hrs</strong>
+                        <span>To Approve</span>
+                    </div>
+                    <div class="stat">
+                        <strong>4.9/5</strong>
+                        <span>Rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-calculator" id="calculator">
+                <div class="glass-card calculator-card">
+                    <h2>Calculate Your Funding</h2>
+                    <p class="subtitle">Enter your desired funding amount below.</p>
+                    
+                    <div class="input-group">
+                        <label for="funding-amount">Requested Amount</label>
+                        <div class="amount-wrapper">
+                            <span class="currency-symbol">$</span>
+                            <input type="text" id="funding-amount" placeholder="50,000" inputmode="numeric">
+                        </div>
+                        <input type="range" id="funding-slider" min="10000" max="500000" step="1000" value="50000">
+                        <div class="range-labels">
+                            <span>$10k</span>
+                            <span>$500k</span>
+                        </div>
+                    </div>
+
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-label">Total Repayment</span>
+                            <strong class="result-value" id="val-repayment">$0</strong>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Estimated Term</span>
+                            <strong class="result-value" id="val-term">6 Months</strong>
+                        </div>
+                        <div class="result-item highlight">
+                            <span class="result-label">Est. Daily Payment</span>
+                            <strong class="result-value" id="val-daily">$0</strong>
+                        </div>
+                    </div>
+                    
+                    <p class="disclaimer">
+                        *This is an estimate based on standard terms. Actual rates may vary depending on business profile and underwriting.
+                    </p>
+                    <button class="button button-full" id="btn-apply-calculated">Apply for <span id="btn-amount">$50,000</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section container" id="how">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">⚡️</div>
+                    <h3>Fast Approvals</h3>
+                    <p>Applications are reviewed quickly with our automated system, providing decisions often on the same day.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🔍</div>
+                    <h3>Transparent Terms</h3>
+                    <p>No hidden fees or surprise charges. See exactly what your repayment will be before you sign anything.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🤝</div>
+                    <h3>Friendly Support</h3>
+                    <p>A dedicated funding advisor will work with you one-on-one to find the best scenario for your business.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <div class="logo">
+                     <span class="logo-text">SMB</span> Direct Funding
+                </div>
+                <p>Helping small businesses achieve big wins.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 SMB Direct Funding. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
